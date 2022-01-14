@@ -3,7 +3,12 @@ Rails.application.routes.draw do
 
 
   # GET /about
+  # get "/about", to: "about#index"
   get "about", to: "about#index"
 
-  
+  # GET /
+  # get "/",     to: "main#index"
+  # get "",     to: "main#index"
+  root to: "main#index"
+
 end
